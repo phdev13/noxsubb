@@ -1,4 +1,4 @@
-# Logs
+﻿# Logs
 logs
 *.log
 npm-debug.log*
@@ -25,3 +25,48 @@ dist-ssr
 
 # Visual Studio temporary files
 .vs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.egg-info/
+.env
+venv/
+backend/venv/
+
+# Large files
+*.dll
+*.lib
+*.so
+*.bin
+*.dat
+*.h5
+*.ckpt
+*.pt
+*.pth
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Build
+build/
+dist/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Others
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/*.db
+backend/*.sqlite3
+backend/.env
