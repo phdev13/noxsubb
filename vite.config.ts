@@ -8,12 +8,11 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     server: {
-      port: 5173, // Changed to match default Vite port
-      strictPort: true, // Will fail if port is in use
-      open: true // Opens the browser automatically
+      host: '0.0.0.0',
+      port: Number(process.env.PORT) || 3000
     },
     build: {
-      target: 'esnext',
+      outDir: 'dist',
       sourcemap: true
     },
     define: {
