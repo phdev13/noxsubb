@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Caption, VideoSource } from '../types';
 
 export const useCaptionGenerator = (videoSource: VideoSource | null, videoDuration: number, language: string) => {
