@@ -274,16 +274,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onVideoSelect, error }) => {
                                 </div>
                                 <button
                                     onClick={handleImportFromUrl}
-                                    disabled={youtubeState.status === 'importing'}
+                                    disabled={youtubeState.status === ('importing' as YouTubeImportStatus)}
                                     className="group/import mt-4 md:mt-auto self-start relative overflow-hidden bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 disabled:from-gray-600 disabled:to-gray-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 disabled:hover:scale-100 hover:shadow-lg hover:shadow-green-500/25 disabled:cursor-not-allowed"
                                 >
-                                    {youtubeState.status === 'importing' && (
+                                    {youtubeState.status === ('importing' as YouTubeImportStatus) && (
                                         <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
                                             <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                                         </div>
                                     )}
-                                    <span className={`relative z-10 transition-all duration-300 ${youtubeState.status === 'importing' ? 'ml-6' : ''}`}>
-                                        {youtubeState.status === 'importing' ? 'Importando...' : 'Importar Vídeo'}
+                                    <span className={`relative z-10 transition-all duration-300 ${youtubeState.status === ('importing' as YouTubeImportStatus) ? 'ml-6' : ''}`}>
+                                        {youtubeState.status === ('importing' as YouTubeImportStatus) ? 'Importando...' : 'Importar Vídeo'}
                                     </span>
                                 </button>
                             </div>
