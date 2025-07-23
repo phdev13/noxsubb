@@ -1,4 +1,4 @@
-﻿import React, { useState, useCallback, useRef, useEffect } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { UploadIcon } from './icons';
 
 // --- Constantes para melhor manutenção ---
